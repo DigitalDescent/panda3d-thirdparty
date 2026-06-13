@@ -948,8 +948,8 @@ if(BUILD_GLSLANG)
   ExternalProject_Add(
     glslang
     GIT_REPOSITORY https://github.com/KhronosGroup/glslang.git
-    GIT_TAG b3a6aa7b03c51ba976e4f4e96b1e31f77f43f312 # vulkan-sdk-1.4.304.1
-    # Note, this requires CMake 3.17, newer versions require CMake 3.22
+    GIT_TAG 06c267049a53ee407739848e9fbd8e01f938e67e
+    # Note, this requires CMake 3.22.1
 
     PATCH_COMMAND patch -p1 < ${CMAKE_CURRENT_LIST_DIR}/patches/glslang-no-std-filesystem.patch
 
